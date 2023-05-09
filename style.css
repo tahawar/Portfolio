@@ -712,7 +712,7 @@ footer {
   cursor: pointer;
 }
 
-@media screen and (max-width: 880px) {
+ @media screen and (max-width: 880px) {
   .contact-container .content-box {
     grid-template-columns: 1fr;
   }
@@ -726,4 +726,39 @@ footer {
   .contact-container {
     padding: 20px 0px;
   }
+} 
+
+.email-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
 }
+.email-button:hover {
+  background-color: #0062cc;
+  cursor: pointer;
+}
+
+
+
+button {
+  background-color: white;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px;
+  cursor: pointer;
+}
+/* button:hover {
+  background-color: black;
+} */
