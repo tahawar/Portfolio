@@ -23,7 +23,7 @@
   <body>
     <header class="py-md-3">
       <div class="logo">Tahawar</div>
-      <nav class="active">
+      <nav class="menu">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#work">Projects</a></li>
@@ -35,6 +35,8 @@
         <i class="fa fa-bars" aria-hidden="true"></i>
       </div>
     </header>
+    
+    
     <div
       id="home"
       class="text hero-section d-flex justify-content-center align-items-center"
@@ -45,13 +47,19 @@
         <p class="line-1 anim-typewriter text-white">
          MERN Stack & App Developer, AI Engineer 
         </p>
+        
+        
+      
+       
         <div class="links ">
           <a href="https://medium.com/@tahawarihsan"><i class="fab fa-medium fa-inverse"></i></a>
           <a href="https://www.instagram.com/tahawarihsan/"><i class="fab fa-instagram"></i></a>
           <a href="https://twitter.com/tahawarihsan"><i class="fab fa-twitter"></i></a>
           <a href="https://www.linkedin.com/in/tahawar-ihsan/"><i class="fab fa-linkedin-in"></i></a>
           <a href="https://github.com/tahawar"><i class="fab fa-github"></i></a>
+          
         </div>
+        
         <a href="#work"
           ><i style="font-size: 35px;" class="fas fa-chevron-circle-down"></i
         ></a>
@@ -162,6 +170,7 @@
             <h2 class="text-left mb-4">
               <strong>Skills On Which I'm Working</strong>
             </h2>
+            <button><a href="Tahawar_ihsan (1).pdf" target="_blank">Download CV</a></button>
             <!-- <p class="para col-md-11 col-12 px-0">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
               rem incidunt repudiandae aliquid voluptate, nobis quasi commodi
@@ -336,7 +345,7 @@
       />
     </section>
 
-    <footer>
+    <footer  id="contact">
       <div class="row m-0">
         <div class="col-lg-12 col-md-12 col-sm-12 nav-container">
           <a href="#home" class="up-nav">
@@ -360,19 +369,28 @@
         </div>
 
         <div class="right-col">
-          <h1>Our Newsletter</h1>
+          <h1>For Contact Send Email</h1>
           <div class="border"></div>
           <p>Enter Your Email to get regular updates of Web Development.</p>
-          <form action="" class="newsletter-form" onsubmit="return false;">
+          <!-- <form action="" method="post" class="newsletter-form">
             <input
-              type="text"
+              type="email"
+              name="email"
               required
               class="txtb"
               placeholder="Enter Your Email"
+              
+
             />
-            <input type="submit" class="button_news" value="submit" />
+            <a href="mailto:example@email.com">Send Email</a>
+
+            <input type="submit" name="submit" class="button_news" value="submit" /> -->
+
+            <a href="mailto:tahawarihsan@gmail.com" class="email-button">Send Email</a>
+
           </form>
         </div>
+        
       </div>
     </footer>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -384,6 +402,16 @@
           animationTime = 600;
 
         initSlider();
+
+
+        // const menuToggle = document.querySelector('.menu-toggle');
+        // const menu = document.querySelector('.menu');
+
+        // menuToggle.addEventListener('click', () => {
+        // menu.classList.toggle('active');
+        //   });
+
+
 
         function initSlider() {
           var sliderWidth = cdSlider.outerWidth(),
