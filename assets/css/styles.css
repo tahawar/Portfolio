@@ -429,3 +429,23 @@ footer {
     max-width: 17.75rem;
   }
 }
+
+
+
+.email-button {
+  display: inline-block;
+  /* margin-right: 230px; */
+  margin-left: 10px;
+  padding: 20px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.email-button:hover {
+  background-color: #0062cc;
+  cursor: pointer;
+}
