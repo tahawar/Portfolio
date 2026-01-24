@@ -1,398 +1,482 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!--CSS Styles -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-
-    <!-- Favicons -->
-    <!-- <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
-    /> -->
-
-    <!-- Animate CSS CDN -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    /> -->
-    <title>Tahawar Ihsan</title>
-  </head>
-
-  <body>
-    <!-- Navbar -->
-    <nav>
-      <h1>Tahawar Ihsan</h1>
-      <ul class="navigation">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-      <button class="burger-menu" id="burger-menu">
-        <ion-icon class="bars" name="menu-outline"></ion-icon>
-        <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
-      </button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tahawar Ihsan - Software Engineer specializing in AI/ML, LangChain, and cloud technologies">
+    <title>Tahawar Ihsan - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="brand-icon">✦</span>
+                <span>Tahawar Ihsan</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
     </nav>
-    
-    <!-- <p> 0024 </p> -->
 
     <!-- Hero Section -->
-    <section class="hero" id="about">
-      <img
-        src="assets/images/ab3.jpeg"
-        alt="jane-doe"
-        loading="lazy"
-        class="hero-img"
-      />
-      <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-title">About Me</h2>
-        <p class="bio-text">
-          Hi, I am Tahawar Ihsan, a MERN Stack & App Developer and AI Engineer. 
-          <br>       
-          <a href="Tahawar_ihsan_CV.pdf" download style="background-color: #4CAF50; /* Green */
-              border: none;
-              color: white;
-              padding: 10px 20px;
-              text-align: center;
-              text-decoration: none;
-              display: inline-block;
-              font-size: 16px;
-              margin: 4px 2px;
-              cursor: pointer;">Download CV
-            </a>
-
-
-        </p>
-      </div>
-    </section>
-
-    <!-- More about -->
-    <section class="more-about">
-      <h2>More About Me</h2>
-      <p>
-        With a solid background in web development and app development, I offer a deep understanding of the MERN stack and proficiency in PHP. I have experience in developing applications using Java and React Native, and have a strong grasp of advanced technologies such as Machine Learning and Natural Language Processing, demonstrated through my use of TensorFlow. I am committed to ongoing learning and professional growth, as evidenced by my certifications from Coursera and Udemy.
-
-
-      </p>
-     
-    </section>
-
-    <!-- Skills section -->
-    <section class="skills" id="skills">
-      <h2 class="skill-header">My Top Skills</h2>
-
-      <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/icons8-html-5.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-css3.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-         
-          <img
-            src="assets/icons/icons8-javascript.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-          src="assets/icons/icons8-react-native.svg"
-          alt=""
-          loading="lazy"
-          class="icon icon-card"
-        />
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
         </div>
-
-        <div class="second-set animate__animated animate__pulse">
-          <img
-          src="assets/icons/node3.png"
-          alt=""
-          loading="lazy"
-          class="icon icon-card"
-        />
-        <img
-        src="assets/icons/express.png"
-        alt=""
-        loading="lazy"
-        class="icon icon-card"
-        />
-          <img
-            src="assets/icons/icons8-bootstrap.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-         
-          <img
-            src="assets/icons/icons8-git.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-
-
-
-        <div class="second-set animate__animated animate__pulse">
-          <img
-          src="assets/icons/python.png"
-          alt=""
-          loading="lazy"
-          class="icon icon-card"
-        />
-        <img
-        src="assets/icons/tensorflow.png"
-        alt=""
-        loading="lazy"
-        class="icon icon-card"
-        />
-          <img
-            src="assets/icons/php.png"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-         
-          <img
-            src="assets/icons/database.png"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects section -->
-    <section class="projects" id="projects">
-      <h2 class="projects-title">Some of my Recent Projects</h2>
-      <div class="projects-container">
-        <div class="project-container project-card">
-          <img
-            src="assets/images/heart.jpg"
-            alt="expense-tracker"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Heart Disease with Classification Machine Learning</h3>
-          <!-- <p class="project-details">
-            Building a machine learning model to predict the presence or absence of heart disease in a patient based on various features such as age, sex, blood pressure, cholesterol levels, etc.
-
-          </p> -->
-          <a href="https://github.com/tahawar/Project-Predicting-Heart-Disease-with-Classification-Machine-Learning" target="_blank" class="project-link">Check it Out</a>
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/pet_shop.png"
-            alt="netflic-clone"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Pet shop Management system </h3>
-          <!-- <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p> -->
-          <a href="https://github.com/tahawar/Database-lab/tree/main/DBproject" target="_blank" class="project-link">Check it Out</a>
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/hms.png"
-            alt="greeny-earth"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Hospital Management system</h3>
-          <p class="project-details">
-           
-            A hospital management system project is a software application designed to manage various aspects of a hospital's operations, including patient records, appointment scheduling, billing, and inventory management.
-
-          </p>
-          <a href="https://github.com/tahawar/CS3004-Software-Design-and-Analysis/blob/main/SOFTWARE%20DESIGN%20%26%20ANALYSIS/report.pdf" target="_blank" class="project-link">Check it Out</a>
-        </div>
-      </div>
-
-
-
-
-      <div class="projects-container">
-        <div class="project-container project-card">
-          <img
-            src="assets/images/bg-2.png"
-            alt="expense-tracker"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">NewsMonkey-React</h3>
-          <!-- <p class="project-details">
-            Building a machine learning model to predict the presence or absence of heart disease in a patient based on various features such as age, sex, blood pressure, cholesterol levels, etc.
-
-          </p> -->
-          <a href="https://github.com/tahawar/-NewsMonkey-React" target="_blank" class="project-link">Check it Out</a>
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/bg-1.png"
-            alt="netflic-clone"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">iNotebook-React</h3>
-          <!-- <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p> -->
-          <a href="https://github.com/tahawar/-iNotebook-React/tree/main" target="_blank" class="project-link">Check it Out</a>
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/img1.jpg"
-            alt="greeny-earth"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Time series forecasting  with TensorFlow</h3>
-          <!-- <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p> -->
-          <a href="https://github.com/tahawar/TensorFlow-Developer-Certificate/blob/main/10_time_series_forecasting_with_tensorflow_video.ipynb" target="_blank" class="project-link">Check it Out</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact section -->
-    <section class="contact" id="contact">
-      <h2>Get In Touch With Me</h2>
-      <div class="contact-form-container">
-        <!-- <div class="contact-form">
-          <form action="https://formspree.io/f/mknaydkl" method="POST">
-            <div class="form-control">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="sender-name"
-                placeholder="Enter Your Name"
-                class="input-field"
-                required
-              />
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for opportunities
             </div>
-            <div class="form-control">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="sender-email"
-                placeholder="Enter Your Email"
-                class="input-field"
-                required
-              />
+            <h1 class="hero-title">
+                Hi, I'm <span class="highlight">Tahawar Ihsan</span>
+            </h1>
+            <p class="hero-subtitle">Software Engineer | AI/ML Specialist</p>
+            <p class="hero-description">Building scalable AI solutions with LangChain, FastAPI, and cloud technologies</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    <span>Get In Touch</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#projects" class="btn btn-secondary">
+                    <span>View Projects</span>
+                    <i class="fas fa-briefcase"></i>
+                </a>
             </div>
-            <div class="form-control">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                cols="60"
-                rows="10"
-                placeholder="Enter Your Message"
-                name="message"
-                class="input-field"
-                required
-              ></textarea>
+            <div class="social-links">
+                <a href="https://github.com/tahawar" target="_blank" aria-label="GitHub" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/tahawar-ihsan" target="_blank" aria-label="LinkedIn" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://medium.com/@tahawarihsan" target="_blank" aria-label="Medium" class="social-link">
+                    <i class="fab fa-medium"></i>
+                </a>
+                <a href="mailto:tahawarihsan@gmail.com" aria-label="Email" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
-            <input
-              type="submit"
-              value="Submit"
-              id="submit-btn"
-              class="submit-btn"
-            />
-          </form>
-        </div> -->
-        <a href="mailto:tahawarihsan@gmail.com" class="email-button">Send Email</a>
-      
-      </div>
+        </div>
     </section>
 
-    <!-- Social accounts - Fixed to the right -->
-    <div class="socials">
-      <a href="https://medium.com/@tahawarihsan" target="_blank"
-        ><img
-          src="assets/icons/medium.png"
-          alt="Twitter"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="https://www.instagram.com/tahawarihsan/" target="_blank"
-        ><img
-          src="assets/icons/icons8-instagram.gif"
-          alt="Instagram"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="https://www.linkedin.com/in/tahawar-ihsan" target="_blank"
-        ><img
-          src="assets/icons/icons8-linkedin-circled.gif"
-          alt="Linkedin"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="https://github.com/tahawar" target="_blank"
-        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
-      /></a>
-    </div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate Software Engineer specializing in AI and Machine Learning. With expertise in building agentic AI systems, I focus on creating scalable, compliant, and explainable AI workflows.</p>
+                    <p>My work involves designing cutting-edge solutions using LangChain, LangGraph, and modern cloud technologies. I'm dedicated to pushing the boundaries of what's possible with AI while maintaining enterprise-grade reliability and security.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>2+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>10+</h3>
+                            <p>Technologies</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>15+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Scroll to top -->
-    <i class="scroll-up" id="scroll-up"
-      ><img
-        src="assets/icons/icons8-upward-arrow.gif"
-        class="socicon up-arrow"
-        alt=""
-    /></i>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <!-- NetSol Technologies -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Engineer (AI Core Team)</h3>
+                            <span class="timeline-date">Aug 2024 - Present</span>
+                        </div>
+                        <h4 class="company">NetSol Technologies Ltd. | Lahore, Pakistan</h4>
+                        <ul class="timeline-list">
+                            <li>Spearheaded the AI module for <strong>Check</strong> and <strong>CDE (Credit Decision Engine)</strong>, enabling human-in-the-loop underwriting with scalable, compliant, and explainable agentic AI workflows.</li>
+                            <li>Designed and implemented an <strong>agentic chatbot system</strong> for CDE using <strong>LangGraph</strong>, <strong>LiteLLM</strong>, and <strong>MCP ContextForge</strong> for safe, structured tool-calling across business logic services.</li>
+                            <li>Built event-driven orchestration pipelines by integrating <strong>n8n</strong> to trigger agent workflows, automate decision stages, and streamline multi-step credit evaluation processes.</li>
+                            <li>Architected agentic microservices using <strong>RabbitMQ</strong> and <strong>Celery</strong>, supporting semantic retrieval, underwriting Q&A, and text-to-SQL capabilities.</li>
+                            <li>Automated RFP generation using <strong>Pinecone</strong>, <strong>MongoDB</strong>, and fine-tuned SLMs, reducing turnaround time by 60%.</li>
+                            <li>Improved observability of LLM-based services with <strong>Langfuse</strong>, <strong>DSPy</strong>, and <strong>Logfire</strong>, enabling compliance-ready auditing.</li>
+                            <li>Developed NLP-driven data retrieval systems for <strong>BMW and Mercedes</strong> using <strong>MongoDB Atlas Vector Search</strong> and <strong>Pinecone</strong>.</li>
+                            <li>Conducted R&D on <strong>Amazon Bedrock</strong> and <strong>SageMaker</strong> for advanced generative AI workloads.</li>
+                            <li>Built robust, scalable AI APIs with <strong>FastAPI</strong> and <strong>Docker</strong>, integrating <strong>OpenAI</strong>, <strong>Claude</strong>, and <strong>Llama</strong> models.</li>
+                        </ul>
+                    </div>
+                </div>
 
-    <!-- Footer section -->
-    <footer>
-      <p class="copy">&copy; Copyright 2022</p>
-      <p class="copy">
-        Built with &#x2661; by
-        <a href="https://www.linkedin.com/in/tahawar-ihsan/" target="_blank"
-          >Tahawar Ihsan</a
-        >
-      </p>
+                <!-- Codrivity -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Machine Learning and Python Engineer</h3>
+                            <span class="timeline-date">Jul 2023 - Jul 2024</span>
+                        </div>
+                        <h4 class="company">Codrivity UK | Islamabad</h4>
+                        <ul class="timeline-list">
+                            <li>Led development of an AI-driven recruitment system (<strong>OnboardIQ</strong>), achieving 95% accuracy in candidate screening.</li>
+                            <li>Built Lumina Chatbot (Django-based), enhancing user engagement in an Agile environment.</li>
+                            <li>Developed algorithm to auto-generate interview questions from extracted keywords, reducing HR prep time by 40%.</li>
+                            <li>Contributed to API development and documentation (Postman, Swagger UI, Redocly) for seamless integration.</li>
+                            <li>Deployed solutions on <strong>AWS Lambda</strong>, leveraging <strong>ECS</strong> and <strong>S3</strong> for scalable, reliable performance.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Julia</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Node.js</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">LlamaIndex</span>
+                        <span class="skill-tag">Hugging Face</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>Databases & Storage</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Pinecone</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Machine Learning & AI</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">LangGraph</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Cloud & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Azure DevOps</span>
+                        <span class="skill-tag">RabbitMQ</span>
+                        <span class="skill-tag">Celery</span>
+                        <span class="skill-tag">n8n</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-vial"></i></div>
+                    <h3>Testing & Observability</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Pytest</span>
+                        <span class="skill-tag">Unittest</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">Jest</span>
+                        <span class="skill-tag">Playwright</span>
+                        <span class="skill-tag">Langfuse</span>
+                        <span class="skill-tag">DSPy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- NetSol Projects -->
+                <div class="project-card featured">
+                    <div class="project-badge">NetSol Technologies</div>
+                    <div class="project-icon"><i class="fas fa-brain"></i></div>
+                    <h3>CDE - Credit Decision Engine (Agentic AI System)</h3>
+                    <p>Designed and implemented an agentic chatbot system using LangGraph, LiteLLM, and MCP ContextForge. Built event-driven orchestration with n8n and architected microservices using RabbitMQ and Celery for semantic retrieval and text-to-SQL capabilities.</p>
+                    <div class="project-tags">
+                        <span>LangGraph</span>
+                        <span>LiteLLM</span>
+                        <span>RabbitMQ</span>
+                        <span>Celery</span>
+                        <span>FastAPI</span>
+                        <span>n8n</span>
+                    </div>
+                </div>
+
+                <div class="project-card featured">
+                    <div class="project-badge">NetSol Technologies</div>
+                    <div class="project-icon"><i class="fas fa-file-invoice"></i></div>
+                    <h3>Automated RFP Generation System</h3>
+                    <p>Automated RFP generation using Pinecone, MongoDB, and fine-tuned SLMs, reducing turnaround time by 60%. Implemented semantic search and document generation with LLM-based services monitored by Langfuse and DSPy.</p>
+                    <div class="project-tags">
+                        <span>Pinecone</span>
+                        <span>MongoDB</span>
+                        <span>LangChain</span>
+                        <span>Langfuse</span>
+                        <span>DSPy</span>
+                    </div>
+                </div>
+
+                <div class="project-card featured">
+                    <div class="project-badge">NetSol Technologies</div>
+                    <div class="project-icon"><i class="fas fa-car"></i></div>
+                    <h3>NLP Data Retrieval for BMW & Mercedes</h3>
+                    <p>Developed NLP-driven data retrieval systems using MongoDB Atlas Vector Search and Pinecone to optimize insight discovery for automotive industry clients. Implemented real-time QA solutions with Amazon Bedrock and SageMaker.</p>
+                    <div class="project-tags">
+                        <span>MongoDB Atlas</span>
+                        <span>Pinecone</span>
+                        <span>AWS Bedrock</span>
+                        <span>SageMaker</span>
+                        <span>NLP</span>
+                    </div>
+                </div>
+
+                <!-- Codrivity Projects -->
+                <div class="project-card featured">
+                    <div class="project-badge">Codrivity UK</div>
+                    <div class="project-icon"><i class="fas fa-robot"></i></div>
+                    <h3>OnboardIQ - AI Recruitment System</h3>
+                    <p>Led development of an AI-driven recruitment platform achieving 95% accuracy in candidate screening. Developed algorithm to auto-generate interview questions from extracted keywords, reducing HR prep time by 40%.</p>
+                    <div class="project-tags">
+                        <span>AI/ML</span>
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>AWS Lambda</span>
+                        <span>NLP</span>
+                    </div>
+                </div>
+
+                <div class="project-card featured">
+                    <div class="project-badge">Codrivity UK</div>
+                    <div class="project-icon"><i class="fas fa-comments"></i></div>
+                    <h3>Lumina Chatbot</h3>
+                    <p>Built Django-based conversational AI chatbot enhancing user engagement. Implemented API integrations and comprehensive documentation using Postman, Swagger UI, and Redocly. Deployed on AWS ECS with S3 for scalable performance.</p>
+                    <div class="project-tags">
+                        <span>Django</span>
+                        <span>Chatbot</span>
+                        <span>AWS ECS</span>
+                        <span>S3</span>
+                        <span>REST API</span>
+                    </div>
+                </div>
+
+                <!-- Academic & Personal Projects -->
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Secure ML Pipeline with Homomorphic Encryption</h3>
+                    <p>Final Year Project implementing privacy-preserving ML models using homomorphic encryption for secure computation on encrypted data without decryption.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>ML</span>
+                        <span>Cryptography</span>
+                        <span>Privacy</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-link"></i></div>
+                    <h3>LangChain-based CSV Query Chatbot</h3>
+                    <p>Built an intelligent chatbot powered by LangChain to query and analyze CSV files using natural language processing, enabling non-technical users to extract insights.</p>
+                    <div class="project-tags">
+                        <span>LangChain</span>
+                        <span>NLP</span>
+                        <span>Python</span>
+                        <span>OpenAI</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-users"></i></div>
+                    <h3>Attendance Analysis of Pakistan's NA Members</h3>
+                    <p>Data analysis project tracking and visualizing attendance patterns of National Assembly members using Python and data visualization tools.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Data Analysis</span>
+                        <span>Pandas</span>
+                        <span>Visualization</span>
+                    </div>
+                    <a href="https://github.com/tahawar/attendence-of-members-of-pakistan-s-na" target="_blank" class="project-link">View on GitHub <i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h3>Heart Disease Prediction</h3>
+                    <p>Machine learning classification model to predict heart disease using various health metrics and patient data with high accuracy.</p>
+                    <div class="project-tags">
+                        <span>ML</span>
+                        <span>Classification</span>
+                        <span>Healthcare</span>
+                        <span>Scikit-learn</span>
+                    </div>
+                    <a href="https://github.com/tahawar/Project-Predicting-Heart-Disease-with-Classification-Machine-Learning" target="_blank" class="project-link">View on GitHub <i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Time Series Forecasting with TensorFlow</h3>
+                    <p>Advanced time series forecasting models built with TensorFlow for predicting future trends and patterns in sequential data.</p>
+                    <div class="project-tags">
+                        <span>TensorFlow</span>
+                        <span>Time Series</span>
+                        <span>Deep Learning</span>
+                        <span>LSTM</span>
+                    </div>
+                    <a href="https://github.com/tahawar/TensorFlow-Developer-Certificate/blob/main/10_time_series_forecasting_with_tensorflow_video.ipynb" target="_blank" class="project-link">View on GitHub <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Bachelor of Science in Computer Science</h3>
+                    <h4>National University of Computer and Emerging Sciences (FAST-NUCES)</h4>
+                    <p class="education-location">Lahore, Pakistan</p>
+                    <p class="education-gpa">CGPA: 3.02</p>
+                    <p class="education-role"><strong>Student Coordinator</strong> for Final Year Project lab</p>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon"><i class="fas fa-certificate"></i></div>
+                    <h3>Machine Learning Specialization</h3>
+                    <h4>Coursera</h4>
+                    <ul class="certification-list">
+                        <li>Supervised Machine Learning</li>
+                        <li>Advanced Learning Algorithms</li>
+                        <li>Unsupervised Learning & Recommenders</li>
+                    </ul>
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/3VKCZEC7XEBZ" target="_blank" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon"><i class="fas fa-award"></i></div>
+                    <h3>Microsoft Learn Student Ambassador</h3>
+                    <h4>Microsoft</h4>
+                    <p>Hosted virtual events on Azure and website hosting for student developers, promoting cloud technologies and best practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-description">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Lahore, Punjab, Pakistan</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:tahawarihsan@gmail.com">tahawarihsan@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p><a href="tel:+923066206308">+92 306 6206308</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com/tahawar" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/tahawar-ihsan" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://medium.com/@tahawarihsan" target="_blank" aria-label="Medium"><i class="fab fa-medium"></i></a>
+                        <a href="https://portfolio-tahawar-ihsan.netlify.app" target="_blank" aria-label="Portfolio"><i class="fas fa-globe"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Tahawar Ihsan. All rights reserved.</p>
+          
+        </div>
     </footer>
 
-    <!-- Website scripts -->
-    <script src="assets/js/app.js"></script>
-
-    <!-- Ion icons scripts -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
+
