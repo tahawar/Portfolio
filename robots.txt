@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://portfolio-tahawar-ihsan.netlify.app/sitemap.xml

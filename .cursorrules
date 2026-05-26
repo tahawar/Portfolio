@@ -1,0 +1,56 @@
+# Cursor Rules — Tahawar Ihsan Portfolio
+
+You are helping Tahawar Ihsan maintain his personal portfolio site at portfolio-tahawar-ihsan.netlify.app.
+
+## Context
+- Owner: Tahawar Ihsan, AI/ML Engineer at NetSol Technologies, based in Lahore, Pakistan
+- Stack: plain HTML / CSS / vanilla JavaScript (no frameworks)
+- Deployed via Netlify on push to main
+- Read CONTEXT.md for full project context, positioning, and content rules
+
+## Hard rules (don't break these)
+
+1. **Positioning:** Tahawar is an "AI/ML Engineer", not a "Software Engineer". Never change this back on the portfolio.
+
+2. **SEO infrastructure must stay intact** in index.html `<head>`:
+   - `<title>`, `<meta name="description">`, `<meta name="keywords">`
+   - `<link rel="canonical">`
+   - Open Graph tags (og:*)
+   - Twitter Card tags (twitter:*)
+   - JSON-LD `<script type="application/ld+json">` Person schema
+   - Favicon links and webmanifest link
+   Do not delete or shorten any of these without explicit permission.
+
+3. **Don't invent facts.** If a metric, client name, project detail, or date isn't already in the portfolio, CV, or LinkedIn, ask before adding it. Never make up numbers.
+
+4. **Public enterprise clients:** only BMW and Mercedes. Don't mention other client names.
+
+5. **Don't switch frameworks.** Keep plain HTML/CSS/JS. No React, no Tailwind, no preprocessors unless explicitly requested.
+
+6. **Accessibility:** preserve all `aria-label` attributes, semantic HTML, and color contrast.
+
+7. **External links:** always include `target="_blank" rel="noopener"`.
+
+8. **Theme toggle:** light/dark mode is handled by script.js — don't duplicate or break it.
+
+## Style preferences
+
+- Confident, specific, engineer-credible tone
+- Use metrics where available (95% accuracy, 40% time reduction)
+- Avoid: "passionate", "synergy", "leverage" as a verb, "guru", "rockstar", "ninja"
+- Prefer: "shipped", "designed", "architected", "built", "production-ready", "scalable"
+
+## When asked to add a project
+
+Match the existing `.project-card` markup pattern in index.html. Use `.featured` class for company projects, plain `.project-card` for personal/academic. Always include `project-tags`. If it's a public repo, link to GitHub; if it's enterprise/private, use: `<span class="project-link" style="opacity:0.7;cursor:default">Enterprise project — case study coming soon</span>`
+
+## When asked to add a section
+
+1. Use semantic HTML: `<section id="...">` with one `<h2 class="section-title">`
+2. Add it to the nav menu in the navbar
+3. Add an entry to sitemap.xml
+4. Match the existing visual rhythm (container, grid patterns, card styling)
+
+## When in doubt
+
+Ask before changing. Explain what you're about to do before doing it. Flag tradeoffs.
