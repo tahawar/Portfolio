@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-geist-sans: 'Geist', system-ui, sans-serif;
+    --font-geist-mono: 'Geist Mono', ui-monospace, monospace;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-bg text-ink font-sans;
+    font-feature-settings: 'ss01', 'cv11';
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: theme('colors.accent.DEFAULT');
+    color: white;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: theme('colors.bg.DEFAULT');
+  }
+  ::-webkit-scrollbar-thumb {
+    background: theme('colors.line.DEFAULT');
+    border-radius: 0;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: theme('colors.line.bright');
+  }
+}
+
+@layer components {
+  /* Grid background pattern */
+  .grid-bg {
+    background-image:
+      linear-gradient(theme('colors.line.subtle') 1px, transparent 1px),
+      linear-gradient(90deg, theme('colors.line.subtle') 1px, transparent 1px);
+    background-size: 60px 60px;
+    background-position: -1px -1px;
+  }
+
+  /* Subtle grain noise overlay */
+  .grain::before {
+    content: '';
+    position: fixed;
+    inset: -100%;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.035;
+    pointer-events: none;
+    z-index: 100;
+    mix-blend-mode: overlay;
+    animation: grain 8s steps(10) infinite;
+  }
+
+  /* Glow effect for accent elements */
+  .accent-glow {
+    box-shadow:
+      0 0 30px -5px theme('colors.accent.DEFAULT' / 30%),
+      0 0 60px -10px theme('colors.accent.DEFAULT' / 20%);
+  }
+
+  /* Text balance for headings */
+  .balance {
+    text-wrap: balance;
+  }
+
+  /* Mono label */
+  .mono-label {
+    @apply font-mono text-[11px] tracking-[0.15em] uppercase text-ink-dim;
+  }
+
+  /* Bracket animation */
+  .bracket {
+    @apply inline-block text-accent transition-transform duration-300;
+  }
+  .group:hover .bracket-left {
+    transform: translateX(-2px);
+  }
+  .group:hover .bracket-right {
+    transform: translateX(2px);
+  }
+
+  /* Section heading */
+  .section-heading {
+    @apply text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight balance;
+    letter-spacing: -0.03em;
+  }
+
+  /* Card surface */
+  .card-surface {
+    @apply bg-bg-card border border-line transition-all duration-300;
+  }
+  .card-surface:hover {
+    @apply border-line-bright bg-bg-hover;
+  }
+
+  /* Animated underline link */
+  .link-underline {
+    @apply relative inline-block;
+  }
+  .link-underline::after {
+    content: '';
+    @apply absolute left-0 -bottom-px h-px w-0 bg-accent transition-all duration-300;
+  }
+  .link-underline:hover::after {
+    @apply w-full;
+  }
+
+  /* Tag style */
+  .tag {
+    @apply inline-flex items-center px-2.5 py-1 font-mono text-[11px] tracking-wide
+           bg-bg-elevated border border-line text-ink-muted
+           transition-all duration-200;
+  }
+  .tag:hover {
+    @apply border-accent/40 text-ink bg-accent/5;
+  }
+}
+
+@layer utilities {
+  /* Animated gradient text for hero accent */
+  .text-shimmer {
+    background: linear-gradient(
+      90deg,
+      theme('colors.ink.DEFAULT') 0%,
+      theme('colors.accent.DEFAULT') 50%,
+      theme('colors.ink.DEFAULT') 100%
+    );
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: shimmer 4s linear infinite;
+  }
+
+  @keyframes shimmer {
+    to {
+      background-position: -200% center;
+    }
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

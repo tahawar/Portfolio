@@ -1,56 +1,38 @@
-# Cursor Rules — Tahawar Ihsan Portfolio
+# Cursor Rules — Tahawar Ihsan Portfolio v2.0
 
-You are helping Tahawar Ihsan maintain his personal portfolio site at portfolio-tahawar-ihsan.netlify.app.
+Read CONTEXT.md for full context. Key rules:
 
-## Context
-- Owner: Tahawar Ihsan, AI/ML Engineer at NetSol Technologies, based in Lahore, Pakistan
-- Stack: plain HTML / CSS / vanilla JavaScript (no frameworks)
-- Deployed via Netlify on push to main
-- Read CONTEXT.md for full project context, positioning, and content rules
+## Stack (don't change)
+- Next.js 15 App Router · TypeScript · Tailwind v3.4 · Framer Motion · Geist fonts
+- Static export to Netlify (`output: 'export'`)
 
-## Hard rules (don't break these)
+## Content
+- All data in `lib/data.ts`. Edit there, not in components.
+- Owner's title is "AI/ML Engineer", never "Software Engineer"
+- Public enterprise clients: only BMW and Mercedes
+- Never invent metrics
 
-1. **Positioning:** Tahawar is an "AI/ML Engineer", not a "Software Engineer". Never change this back on the portfolio.
+## Design Locks
+- Single accent color: electric blue `#3b82f6`. No gradients beyond the subtle hero/contact radial.
+- Background: `#0a0a0b`. Sharp corners.
+- Geist Sans for body, Geist Mono for technical accents (labels, tags, dates, IDs).
+- Don't add purple, no rainbow effects, no neon green.
 
-2. **SEO infrastructure must stay intact** in index.html `<head>`:
-   - `<title>`, `<meta name="description">`, `<meta name="keywords">`
-   - `<link rel="canonical">`
-   - Open Graph tags (og:*)
-   - Twitter Card tags (twitter:*)
-   - JSON-LD `<script type="application/ld+json">` Person schema
-   - Favicon links and webmanifest link
-   Do not delete or shorten any of these without explicit permission.
+## SEO Locks
+- Don't remove anything from `app/layout.tsx` head: title, description, OG, Twitter, JSON-LD.
+- Don't remove `public/robots.txt` or `public/sitemap.xml`.
 
-3. **Don't invent facts.** If a metric, client name, project detail, or date isn't already in the portfolio, CV, or LinkedIn, ask before adding it. Never make up numbers.
+## Components
+- Components using Framer Motion or React hooks must have `'use client'` at the top.
+- Match the existing section pattern: number label (mono, accent) → divider → uppercase mono category → section heading → content.
 
-4. **Public enterprise clients:** only BMW and Mercedes. Don't mention other client names.
+## When asked to add things
+- New section: define data type + content in `data.ts`, build a component, add to `app/page.tsx`, add nav entry in `Nav.tsx`, update sitemap.
+- New project: add to `projects` array in `data.ts`. UI updates automatically.
+- New experience: add to `experience` array in `data.ts`. UI updates automatically.
 
-5. **Don't switch frameworks.** Keep plain HTML/CSS/JS. No React, no Tailwind, no preprocessors unless explicitly requested.
-
-6. **Accessibility:** preserve all `aria-label` attributes, semantic HTML, and color contrast.
-
-7. **External links:** always include `target="_blank" rel="noopener"`.
-
-8. **Theme toggle:** light/dark mode is handled by script.js — don't duplicate or break it.
-
-## Style preferences
-
-- Confident, specific, engineer-credible tone
-- Use metrics where available (95% accuracy, 40% time reduction)
-- Avoid: "passionate", "synergy", "leverage" as a verb, "guru", "rockstar", "ninja"
-- Prefer: "shipped", "designed", "architected", "built", "production-ready", "scalable"
-
-## When asked to add a project
-
-Match the existing `.project-card` markup pattern in index.html. Use `.featured` class for company projects, plain `.project-card` for personal/academic. Always include `project-tags`. If it's a public repo, link to GitHub; if it's enterprise/private, use: `<span class="project-link" style="opacity:0.7;cursor:default">Enterprise project — case study coming soon</span>`
-
-## When asked to add a section
-
-1. Use semantic HTML: `<section id="...">` with one `<h2 class="section-title">`
-2. Add it to the nav menu in the navbar
-3. Add an entry to sitemap.xml
-4. Match the existing visual rhythm (container, grid patterns, card styling)
-
-## When in doubt
-
-Ask before changing. Explain what you're about to do before doing it. Flag tradeoffs.
+## Forbidden
+- Don't add Google Analytics. Use Plausible or Cloudflare Web Analytics if requested.
+- Don't introduce new fonts.
+- Don't switch CSS frameworks.
+- Don't add a live chatbot demo without explicit approval (API cost + security concerns).
